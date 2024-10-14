@@ -140,7 +140,7 @@ employeeSearch.addEventListener('keyup', e => {
     let employeeName = document.querySelectorAll('h3.card-name');
     employeeName.forEach(employee => {
         if (employee.textContent.toLowerCase().includes(currentValue)) {
-            employee.parentNode.parentNode.style.display = 'block';
+            employee.parentNode.parentNode.style.display = 'flex';
         } else {
             employee.parentNode.parentNode.style.display = 'none';
         }
